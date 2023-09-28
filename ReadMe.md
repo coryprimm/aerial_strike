@@ -32,12 +32,12 @@ Open the index.html file in your preferred web browser.
 
 Start playing and enjoy the game!
 
-##Controls
+## Controls
 Use the arrow keys to control your fighter jets or target vision.
 Strategically position your shots and hideaways with the keys q, w, e, a, s, d, z, x, and c.
 Use r for reset.
 
-##Feedback and Contributions
+## Feedback and Contributions
 If you encounter any issues, have suggestions, or would like to contribute to the development of Aerial Strike, please create an issue or submit a pull request.
 
 We hope you enjoy playing Aerial Strike! Happy dogfighting in the skies!
