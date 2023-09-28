@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 drawSpace(bravenewouterspace, 'bravenewouterspace');
             });
         }
-        //End logic
+
         document.getElementById('play-again').addEventListener('click', function (event) {
             userscore = 0;
             machinescore = 0;
