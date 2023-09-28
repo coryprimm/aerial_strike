@@ -13,7 +13,7 @@ In Aerial Strike, you can:
 
 ## Demo
 
-You can play the latest version of Aerial Strike at [http://game.coryprimm.com/](http://game.coryprimm.com/).
+You can play an older version of Aerial Strike at [http://game.coryprimm.com/](http://game.coryprimm.com/).
 
 ## Installation
 
@@ -33,8 +33,10 @@ Open the index.html file in your preferred web browser.
 Start playing and enjoy the game!
 
 Controls
-Use the arrow keys to control your fighter jet.
-Press the spacebar to fire missiles.
+Use the arrow keys to control your fighter jets or target vision.
+Strategically position your shots and hideaways with the keys q, w, e, a, s, d, z, x, and c.
+Use r for reset.
+
 Feedback and Contributions
 If you encounter any issues, have suggestions, or would like to contribute to the development of Aerial Strike, please create an issue or submit a pull request.
 
