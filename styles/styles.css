@@ -1,0 +1,281 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }    
+        .row {
+            line-height: 0;
+        }
+        #landingview{
+            width: 900px;
+            height: 700px;
+            background: url("../images/optimized.gif");
+            background-size: 110% 110%;
+            background-repeat: no-repeat;
+        }
+        #defensemode{
+            visibility: hidden;
+        }
+        .universe{
+            vertical-align: top;
+            background-color: black;
+            width: 900px;
+            height: 3000px;
+            
+            margin: 0 auto;
+        }
+        #outerspace{
+            vertical-align: top;
+            margin-left:0px;
+            padding-bottom:30px;
+            display: inline-block;
+        }
+        .wall {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            border-color: white;
+            border: 1px solid green;
+            border-radius: 70px;
+            outline: 1px solid white;
+
+            
+        }
+         .usermissile { 
+            background-image: url("../images/Blue-Missle.png"); 
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: inline-block; 
+            background-size: contain; 
+            border: 1px solid white; 
+        } 
+        .machineplane { 
+            background: url("../images/Red-Jet.png");
+            background-size: 110% 110%;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: inline-block;  
+            border: 1px solid white;
+        } 
+        .userplane { 
+            background: url("../images/Blue-Jet.png");
+            background-size: 110% 110%;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: inline-block;  
+            border: 1px solid white;
+        } 
+        .machinemissile { 
+            background-image: url("../images/Red-Missle.png"); 
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: inline-block; 
+            background-size: contain; 
+            border: 1px solid white; 
+        } 
+        .explosion_image{
+            background-image: url("../images/explosion.png"); 
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: inline-block; 
+            background-size: contain; 
+            border: 1px solid white; 
+        }
+         .blank {
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            border: 1px solid white;
+        } 
+         #spaceship {
+            background-color: black;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: inline-block; 
+            background-color: pink;
+            background-size: contain;  
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }  
+        h1{
+            color: white;
+            font-size: 60px;
+            margin-left: 50px;
+            padding-bottom: 50px;
+            font-family: 'Monoton', sans-serif;
+        }
+        h2{
+            padding-top:200px;
+            width: 900px;
+            text-align:center;
+            color: white;
+            font-size: 40px;
+            margin: auto 0;
+            padding-bottom: 70px;
+            font-family: 'Monoton', sans-serif;
+            word-spacing:20px;
+            letter-spacing: 10px;
+        }
+        h4{
+            width: 900px;
+            text-align:center;
+            color: white;
+            font-size: 40px;
+            margin: auto 0;
+            padding-top: 200px;
+            padding-bottom: 70px;
+            font-family: 'Monoton', sans-serif;
+            word-spacing:20px;
+            letter-spacing: 10px;
+        } 
+        
+        #attackmode{
+            visibility: visible;
+            color: white;
+        }
+        #bravenewouterspace{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+        }
+        #yourscore {
+            margin-left:220px;
+            border: 1px solid white;
+            color:white;
+            width: 90px;
+            height: 100px;
+            line-height: 80px;
+            padding-left: 12px;
+            text-align: center;
+            display: inline-block;
+            font-size: 50px;
+        }
+        .universe > #all-in-one {
+            color: white;
+            text-align:center;
+            border-radius: 5px;
+            margin-left: 50px;
+            margin-top: 40px;
+            border: 1px solid white;
+            text-decoration: none;
+            vertical-align:top;
+            display:inline-block;
+            width:150px;
+            height:40px;
+            line-height: 40px;
+            
+        }
+        #theirscore {
+            margin-left:45px;
+            border: 1px solid white;
+            width: 90px;
+            height: 100px;
+            line-height: 80px;
+            text-align: center;
+            padding-left: 12px;
+            color: white;
+            display: inline-block;
+            font-size: 50px;
+        }
+        #padtheouterspace{
+            padding-left: 150px;
+            display: inline-block;
+            padding-bottom: 60px;
+        }
+        #attackmode{
+            color:white;
+        }
+        #defensemode{
+            color: white;
+        }
+        p{
+         color: white;
+         text-align:left;
+         padding:20px;
+        
+     }
+     a{
+        background-color:blue;
+        height:30px;
+        width:170px;
+        margin-left:4px;
+        vertical-align:top;
+        color:white;
+        text-decoration: none;
+        border-radius:10px;
+        border-radius:5px;
+        margin-top:15px;
+        text-align: center;
+        line-height:30px;
+        background-image: linear-gradient(#2c89ad, #1b6886);
+        box-shadow: 2px 2px gray;
+        font-size:15px;
+        display:inline-block;
+
+     }
+     #padding-wrapper{
+         padding-left:200px;
+         display:inline-block;
+     }
+     #padding-wrapper2{
+         padding-left:80px;
+         display: inline-block;
+     }
+     #padding-wrapper3{
+         padding-left:80px;
+         padding-top: 100px;
+         display: inline-block;
+     }
+     #nother_padding_needed_here{
+        padding-left:40px;
+        max-width: 90%
+     }
+     #navbar{
+         padding-left: 700px;
+     }
+     .blacktext{
+         color:white;
+         vertical-align: top;
+         font-size: 22px;
+     }
+     #you-win{
+         visibility: hidden;
+         position: absolute;
+         width: 900px;
+         top: 1500px;
+         color: blue;
+         font-family: "Monoton", sans-serif;
+         font-size: 100px;
+     }
+     #you-lose{
+        visibility: hidden;
+         position: absolute;
+         width: 900px;
+         top: 1500px;
+         left: 10%;
+         
+         color: blue;
+         font-family: "Monoton", sans-serif;
+         font-size: 100px;
+     }
+     #play-again{
+        visibility: hidden;
+         position: absolute;
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+         width: 50px;
+         top: 1150px;
+         color:gray;
+         left: 85%; 
+     }
+     #playagain:hover{
+         color: red;
+         background-color: orange
+     }
