@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     var bravenewouterspace = sumation(machineouterspace, mirrorouterspace);
 
-                    bravenewouterspace.forEach(row => row.forEach(cell => cell === 1 ? 0 : cell === 8 && userscore++));
+                    bravenrewouterspace.forEach(row => row.forEach(cell => cell === 1 ? 0 : cell === 8 && userscore++));
 
                     drawSpace(bravenewouterspace, 'bravenewouterspace');
                 }
