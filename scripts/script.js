@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let userscore = 0;
     let machinescore = 0;
     let userturn = true; 
+    let hasPossibleMixedContents = false;
     
     let outerspace = [
         [0, 0, 0, 0, 0],
@@ -48,6 +49,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         return countSquares;
+    }
+
+    /**
+     * Resets the user's board to starting position
+     */
+    function reset(){
+        outerspace = [
+            [0, 0, 0, 0, 0],
+            [0, 1, 1, 1, 0],
+            [0, 1, 1, 1, 0],
+            [0, 1, 1, 1, 0],
+            [0, 0, 0, 0, 0],
+        ];
+        spaceship = { x: 2, y: 2 };
+        drawSpace(outerspace, 'outerspace');
     }
 
     /**
@@ -126,7 +142,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Handle keyboard inputs
     document.onkeydown = function (e) {
-        if (e.keyCode === 37 && spaceship.x > 0) {
+        if (hasPossibleMixedContents == true){
+
+            reset();
+            hasPossibleMixedContents = false;
+            return;
+        }
+        if (e.keyCode === 37 && spaceship.x - 1 != 0) {
             spaceship.x--;
             updatePositions(outerspace, [
                 { y: spaceship.y, x: spaceship.x + 1 },
@@ -223,16 +245,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 outerspace[spaceship.y + dy][spaceship.x + dx] = userturn ? 2 : 5;
             }
         }
-        if (e.keyCode == 82) { //Reset button
-            outerspace = [
-                [0, 0, 0, 0, 0],
-                [0, 1, 1, 1, 0],
-                [0, 1, 1, 1, 0],
-                [0, 1, 1, 1, 0],
-                [0, 0, 0, 0, 0],
-            ];
-            spaceship = { x: 2, y: 2 };
-        }
         drawSpace(outerspace, 'outerspace');
     };
 
@@ -243,6 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (countEm(outerspace) < 5) return;
                 
                 userturn = !userturn;
+                hasPossibleMixedContents = true;
 
                 if (
                     document.getElementById('attackmode').style.visibility == 'visible' ||
@@ -305,8 +318,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('you-win').style.visibility = 'hidden';
             document.getElementById('you-lose').style.visibility = 'hidden';
             drawSpace(bravenewouterspace, 'bravenewouterspace'), drawSpace(outerspace, 'outerspace');
-            document.getElementById("theirscore").innerHTML = "Machine Score: " + machinescore;
-            document.getElementById("yourscore").innerHTML = "Your Score: " + userscore;
+            document.getElementById("theirscore").innerHTML = machinescore;
+            document.getElementById("yourscore").innerHTML = userscore;
         });
     };
 });
